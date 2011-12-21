@@ -13,7 +13,7 @@ Properties
 Details
 -------
 
-When you call the SQLTransaction executeSql method it's callback methods will be called with a SQLResultSet object.  The result object has three properties. The first is the `insertId` which will return the row number of a success SQL insert statement.  If the statement inserted multiple rows, the ID of the last row will be the one returned. If the statement did not inserted a row, then calling the attribute will raise an INVALID_ACCESS_ERR exception. The `rowsAffected` is always 0 for a SQL select statement. For insert or update statements it returns the number of rows that have been modified.  The final property is of type SQLResultSetList and it contains the data returned from a SQL select statement.
+When you call the SQLTransaction executeSql method it's callback methods will be called with a SQLResultSet object.  The result object has three properties. The first is the `insertId` which will return the row number of a success SQL insert statement.  If the statement inserted multiple rows, the ID of the last row will be the one returned. If the statement did not inserted a row, then calling the property will raise an INVALID_ACCESS_ERR exception. The `rowsAffected` is always 0 for a SQL select statement. For insert or update statements it returns the number of rows that have been modified.  The final property is of type SQLResultSetList and it contains the data returned from a SQL select statement.
 
 Supported Platforms
 -------------------
