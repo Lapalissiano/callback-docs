@@ -32,7 +32,7 @@ Execute SQL Quick Example
 	function querySuccess(tx, results) {
 		// the number of rows returned by the select statement
 		console.log("Returned rows = " + results.rows.length);
-		// this will be false since it was a select statement
+		// this will be true since it was a select statement and so rowsAffected was 0
 		if (!resultSet.rowsAffected) {
 			console.log('No rows affected!');
 			return false;
@@ -83,7 +83,7 @@ Full Example
 		function querySuccess(tx, results) {
 			// the number of rows returned by the select statement
 			console.log("Returned rows = " + results.rows.length);
-			// this will be false since it was a select statement
+			// this will be true since it was a select statement and so rowsAffected was 0
 			if (!resultSet.rowsAffected) {
 				console.log('No rows affected!');
 				return false;
